@@ -5,19 +5,19 @@
 using namespace std;
 
 template <typename T>
-void pushQueue(templatePriorityQueue<T>* Que, int data){
+void pushQueue(PriorityQueue<T>* Que, int data){
 	cout << "[+] Integer "<< data <<" pushed in the Priority Queue." << endl;
 	Que->push(data);
 }
 
 template<typename T>
-void popQueue(templatePriorityQueue<T>* Que){
+void popQueue(PriorityQueue<T>* Que){
 	cout << "[+] Integer "<< Que->top() << " will be poped from the Priority Queue." << endl;
 	Que->pop();
 }
 
 int main(int argc, char* argv[]){
-	templatePriorityQueue<int> priQueue;
+	PriorityQueue<int> priQueue;
 	int customNumber = 0;
 
 	//empty check

@@ -7,7 +7,7 @@
 
 
 TEST(PriorityQueueTest,Trivial){
-	templatePriorityQueue<int> expTarget;
+	PriorityQueue<int> expTarget;
 
 	//Test 1 - Initalize
 	ASSERT_TRUE(expTarget.empty()); // empty test
